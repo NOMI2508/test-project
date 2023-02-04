@@ -1,27 +1,148 @@
-#container {
-  text-align: center;
+ion-content {
+  --ion-background-color: #f6f6f6f6;
+//'**************  Slides **********'
+  ion-slides {
+    --bullet-background: rgb(111, 109, 109);
+    --bullet-background-active: rebeccapurple;
+    padding: 8px;
 
+//'**************  Card styling **********'
+
+    ion-card {
+      height: 73vh;
+      margin: 0px 1px 10% 0px;
+      border-radius: 7%;
+      position: relative;
+      background-color: darkslategray;
+      width: 96%;
+
+//'**************  styling for gallery icon section **********'
+      
+      ion-card-title {
+        color: #ffffff;
+
+        h1 {
+          font-size: 29px;
+          margin: 0px 0px 7px 0px;
+        }
+
+        .name {
+          display: flex;
+          align-items: center;
+        }
+
+        ion-icon {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          padding: 8px;
+          background: rgb(69, 134, 154);
+          margin-left: 15px;
+        }
+
+        h4 {
+          margin: auto;
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+//'**************  segments **********'
+
+ion-segment-button {
+  --background: transparent;
+  --background-focused-opacity: 1;
+  --background-hover-opacity: 1; 
+  --color: #73767e;
+  --color-checked: #e5eaf2;
+  --indicator-height: 0px;
+  --indicator-transition: background-color 15ms linear;
+  --transition: background-color 15ms linear;
+}
+
+ion-segment {
+  --background: transparent;
+}
+
+//'**************  styling for deen && about section **********'
+
+
+.description-section,
+.deen-section {
+  color: #ffffff;
+  background-color: hsl(177deg 100% 19%);
+  .description-heading,
+  .deen-heading {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    h1 {
+      vertical-align: bottom;
+      font-size: 2rem;
+    }
+    img {
+      width: 115px;
+      height: 100px;
+      //object-fit: contain;
+      opacity: 0.5;
+      border-radius: 10%;
+    }
+  }
+  .description-content,
+  .deen-content {
+    background-color: hsl(178deg 95% 23%);
+    height: 100vh;
+    p {
+      font-size: 20px;
+      text-align: start;
+      padding: 18px 20px;
+      line-height: 1.3;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+    .detail {
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      line-height: 1.8;
+      ion-label {
+        margin-left: 20px;
+        font-size: 19px;
+        font-weight: 500;
+      }
+      ion-icon {
+        font-size: 24px;
+      }
+    }
+    .deen-detail{
+      .detail{
+        background-color: hsl(177deg 100% 19%);
+        padding: 10px 12px;
+        margin: 8px 0px 8px 0px;
+        border-radius: 20px;
+        h2,h3{
+          font-weight: 500;
+        }
+
+      }
+    }
+  }
+}
+
+//'**************  styling for icons **********'
+
+
+.card-footer {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  display: flex;
+  bottom: 9vh;
+  width: 100%;
+  ion-button {
+    ion-icon {
+      color: #eee;
+    }
+  }
 }
